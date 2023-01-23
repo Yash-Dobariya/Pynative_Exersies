@@ -5,5 +5,8 @@ import json
 sampleJson = """{"key1": "value1", "key2": "value2"}"""
 
 access_value=json.loads(sampleJson)
-print(access_value['key2'])
+
+# if you write wrong key then "get" function is return None
+
+print(access_value.get('key'))
 

@@ -56,17 +56,7 @@ s.sort()        #inplace=true, not pure
 s
 
 s = [10,5,29,4]
-sorted(s)     
-
-
-
-
-
-
-
-
-
-
+sorted(s)
 
   #inplace=false, pure, follows iteration protocol
 s
@@ -115,6 +105,7 @@ x=15
 from random import *
 
 #produce same results in random(reproduce results in stimulations, publish seed in testing results(reproduceable research))
+
 seed(8473940)
 random()
 random()

@@ -28,7 +28,7 @@ print(2+3)                                       # 5
 print(2-3)                                       # -1  
 print(2*3)                                       # 6
 print(2/3)                                       # 0.66
-print(2//3) # -> integer                         #0
+print(2//3) # -> integer                         # 0
 print(2%3)                                       # 2
 print(2**3) # 2^3                                # 8 
 
@@ -141,7 +141,7 @@ print(strin[::-1]) #to reverse the string
 
 # $Immutability
 strin = '01234567'
-#strin[0] = '8'  ->we cannot alter the string characters since string is 'immutable' just as a 'touple'
+#strin[0] = '8'  ->we cannot alter the string characters since string is 'immutable' just as a 'tuple'
 #we can replace the whole string but not particular characters, once assigned is assigned 
 strin = strin+ '8'
 print(strin)
@@ -165,9 +165,8 @@ bool('')
 
 # $Most common type conversion error
 year = input("\nEnter your birth year :")
-age = 2020 - int(year) #this is the part where error occurs most of the time 
+age = 2022 - int(year) #this is the part where error occurs most of the time 
 print(f"Your current age is {age}")
-              
 
 
 # $Exercise password asterisk
@@ -677,8 +676,6 @@ print("\nOriginal(my_set) after clearing : ", my_set)
 print("new(new_set) after clearing : ", new_set)
 
 
-
-
 # $Set's methods#
 #################
 #Remember the venn diagram
@@ -725,7 +722,6 @@ print("is x superset of y? :", my_set.issuperset(your_set))
 print("is y superset of x? :", your_set.issuperset(my_set))
 
 
-
 basket = ['a','x','b','c','d','e','d']
 basket.sort()
 basket.reverse()
@@ -760,7 +756,7 @@ print(d)
 # Chapter 7 : working with lists 3
 #  # More with lists
 # using this list, 
-basket = ["Banana", "Apples", "Oranges", "Blueberries"];
+basket = ["Banana", "Apples", "Oranges", "Blueberries"]
 
 # 1. Remove the Banana from the list
 print(basket.remove('Banana'))
@@ -783,7 +779,7 @@ print(basket)
 
 # Chapter 8 :
 # using this list: 
-basket = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+basket = ["Banana", ["Apples", ["Oranges"], "Blueberries"]]
 # access "Oranges" and print it:
 # You will find the answer if you scroll down to the bottom, but attempt it yourself first!
 
@@ -1255,7 +1251,7 @@ def call_fun(passedfun):
 def greet():
     print('Calling \'fun\' as a variable')
 
-call(greet)  #<-function passed as variable name
+greet()  #<-function passed as variable name
 
 # $another way
 def call_ref(passedfun):
@@ -1429,7 +1425,7 @@ long_time2()
 
 # # $comprehension
 # for item in gen_fn(100)  :
-#   print(item)  
+#   print(item)
 
 # $How 'range' works
 print("\nHow 'range' works")

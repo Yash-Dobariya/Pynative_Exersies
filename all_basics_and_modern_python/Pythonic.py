@@ -95,7 +95,7 @@ print(sorted(lengths, key=len))
 #-------> finding value in loops
 #6 bad
 users = ['parth', 'helly', 'nidhi', 'bhoomit']
-found = False;
+found = False
 find_name = 'nidhi'
 for user in users:
     if user == find_name:
@@ -239,7 +239,7 @@ print(class_result)             #output does not make much sense while re-readin
 from collections import namedtuple
 Class_Result = namedtuple('Result', ['passes','fails'])
 #or
-Class_Result = NamedTuple('Result', [('passes',int), ('fails',int)])
+Class_Result = namedtuple('Result', [('passes',int), ('fails',int)])
 class_result = Class_Result(9,1)
 print(class_result)                 #now reading the output makes much more sense while re-reading
 print(class_result[0])              #can acess value regularly
@@ -351,7 +351,7 @@ print(f'sum :{sum(squares)}')
 print(f'sum :{sum([x**2 for x in range(10)])}')     #using loop comprehension
 
 #19 best
-print(f'sum :{sum(x**2 for x in range(10))}')       
+print(f'sum :{sum(x**2 for x in range(10))}')
 
 #-------> form large list with same element multiple times
 from collections import Counter     #for visualising purpose
